@@ -44,6 +44,7 @@ const pool = mysql.createPool(dbConfig);
 
 //Test API 
 app.get('/test',(req,res)=>{
+  console.log("request is received");
   res.status(200).send("Server is working - test AC1");
 })
 
